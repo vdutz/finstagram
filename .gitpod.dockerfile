@@ -2,7 +2,7 @@ FROM gitpod/workspace-full
 # USER gitpod
 USER root
 # RUN sudo curl https://cli-assets.heroku.com/install.sh | sh
-RUN curl https://cli-assets.heroku.com/install.sh | sh
+RUN sudo curl https://cli-assets.heroku.com/install.sh | sh
 
 # FROM gitpod/workspace-full:latest
 
