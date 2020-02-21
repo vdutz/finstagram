@@ -2,7 +2,11 @@ FROM gitpod/workspace-full
 # USER gitpod
 USER root
 # RUN sudo curl https://cli-assets.heroku.com/install.sh | sh
-RUN sudo curl https://cli-assets.heroku.com/install.sh | sh
+# RUN sudo curl https://cli-assets.heroku.com/install.sh | sh
+
+FROM gitpod/workspace-full
+USER root
+RUN brew install heroku
 
 # FROM gitpod/workspace-full:latest
 
