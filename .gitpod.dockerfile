@@ -6,7 +6,7 @@ USER root
 
 FROM gitpod/workspace-full
 USER root
-RUN brew install heroku
+RUN brew tap heroku/brew && brew install heroku
 
 # FROM gitpod/workspace-full:latest
 
