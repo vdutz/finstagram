@@ -1,12 +1,19 @@
 FROM gitpod/workspace-full
-# USER gitpod
-USER root
-# RUN sudo curl https://cli-assets.heroku.com/install.sh | sh
-# RUN sudo curl https://cli-assets.heroku.com/install.sh | sh
 
-FROM gitpod/workspace-full
-USER root
-RUN brew tap heroku/brew && brew install heroku
+USER gitpod
+# RUN curl https://cli-assets.heroku.com/install.sh 3 | sh
+RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sudo sh
+
+# FROM gitpod/workspace-full
+# # USER gitpod
+# USER root
+# # RUN sudo curl https://cli-assets.heroku.com/install.sh | sh
+# # RUN sudo curl https://cli-assets.heroku.com/install.sh | sh
+
+# FROM gitpod/workspace-full
+# USER root
+# # RUN brew tap heroku/brew && brew install heroku
+# RUN gem install heroku -v '3.99.4' --source 'https://rubygems.org/'
 
 # FROM gitpod/workspace-full:latest
 

@@ -11,7 +11,8 @@ gem 'puma'
 gem 'tux'
 gem 'pry'
 
-gem 'heroku'
+# gem 'heroku'
+gem 'platform-api'
 
 group :development, :test do
   gem 'shotgun'
